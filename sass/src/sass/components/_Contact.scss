@@ -1,0 +1,120 @@
+.form__container{
+    background:$CartBack;
+    margin-top:10rem;
+    padding-bottom:23rem;
+    margin-bottom:2rem;
+   // margin-left:30rem;
+    width:50rem;
+    height:52rem;  
+    margin-left:30rem;
+    @include lg{
+        width:100%;
+        margin-left:15rem;
+    } 
+    @include md{
+        width:117%;
+        margin-left:0;
+    } 
+
+    }
+
+
+    .container form{
+        width:100%;
+        padding:10px;
+       
+    }
+
+    .container label{
+        display:block;
+        
+    }
+
+    .container input,
+    .container textarea{
+
+        width:100%;
+        margin:0 auto;
+        padding:1rem;
+        border:none;
+       
+        box-shadow: $box-shadow;
+        &:focus {
+            border:none;
+            padding-left: 2rem;
+            border-radius: 2rem;
+            border: 2px solid $PrimaryColor;
+            &::placeholder {
+              color: transparent;
+           
+            }
+          }
+        
+    }
+
+
+    .singleItem{
+        margin:1rem 0;
+        font-size:1.6rem;
+        padding-bottom:0.5rem;
+
+
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+        padding-top:3rem;
+        border:none;
+                   &:hover{
+               color:Red;
+           }
+        
+        &__submit{
+            width:15rem;
+            font-size:1.6rem;
+            letter-spacing: 0.2rem;
+            background:$PrimaryColor;
+            border-radius:1rem;
+            padding:0.5rem 1rem;
+            border:1px solid transparent;
+            outline:none;
+            transition: all 0.5 ease-in-out;
+            position:Relative;
+            color:$LightBlack;
+            &:hover{
+               border:1px solid #fefefe;
+               background:$LightBlack;
+               color:$PrimaryColor;
+               cursor:pointer;
+            }
+            
+        }
+   
+    }
+
+    .msg{
+        //display:none;
+        text-align:center;
+        margin:0 auto;
+        margin-top:3rem;
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+        width:34rem;
+        padding:0.3rem;
+        font-family: $SecondaryFont;
+        font-weight: 400;
+        background-color: #fff;
+        border-radius: 0.5rem;
+    }
+    .message{
+        font-size: 1.5rem;
+    }
+   
+    .heading{
+        text-align:center;
+        font-family: $PrimaryFont;
+        font-size:1.6rem;
+        font-weight: 400;
+        
+    }

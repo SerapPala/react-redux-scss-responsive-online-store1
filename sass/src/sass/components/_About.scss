@@ -1,0 +1,64 @@
+.about{
+    padding:10rem 0;
+    width:100%;
+    height:auto;
+
+    &__h4 {
+        font-size:3rem;
+        font-weight: 600;
+        margin-top:0.5rem;
+        color:$head;
+        @include md {
+           padding-left:2rem;
+         }
+    }
+
+    &__text p{
+        color:$LightBlack;
+        font-size:1.5rem;
+        font-weight: 300;
+        line-height: 2;
+        padding-left:5rem;
+        margin-bottom:3rem;  
+        @include md {
+           margin-bottom:2rem;
+        }
+    }
+
+    &__section {
+         
+        background: $CartBack;
+        padding:5rem;
+        margin:2rem;
+        text-align:center;
+        color:$head;
+        
+        @include md {
+           padding-left:2rem;
+         }
+
+        &-icon{
+            color:$LightBlack;
+            margin-bottom:1rem;
+        }
+
+        &-heading  h6{
+            font-size: 1.8rem;
+            font-weight:600;
+            margin-bottom:5.5rem;
+        }
+        &-text {
+            color:$LightBlack;
+            font-size:1.2rem;
+            letter-spacing:1px;
+             
+        }
+    }
+    .icon{
+        font-size:3em;
+    }
+    &__secondheading{
+   
+        font-size:1.4rem;
+    }
+}

@@ -1,0 +1,19 @@
+@import "base/base";
+
+// import abstracts
+@import "abstracts/responsive";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// import utilitiess
+@import "utilities/utilities";
+
+// import components
+@import "components/Navbar";
+@import "components/Header";
+@import "components/Home";
+@import "components/Details";
+@import "components/Cart";
+@import "components/Footer";
+@import "components/About";
+@import "components/Contact";

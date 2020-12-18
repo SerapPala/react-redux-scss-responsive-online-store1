@@ -1,0 +1,113 @@
+.details{
+    margin-top:10rem;
+
+
+    &__image{
+        width:100%;
+        height:auto;
+        padding-right:3rem;
+      
+
+        img{
+            width:100%;
+            height:auto;
+            margin-bottom:2.5rem;
+        }
+    }
+    &__name{
+        font-size:2.8rem;
+        color:$LightBlack;
+        font-weight:400;
+        font-family:$SecondaryFont;
+        text-transform: capitalize;
+        margin-bottom:3rem;
+    }
+    &__actaul{
+        text-decoration: line-through;
+        font-size:2rem;
+    }
+    &__discount{
+        margin-left:2rem;
+        font-size:2rem;
+    }
+
+    &__info{
+        
+        margin-bottom:3rem;
+
+        &__k{
+
+            margin-top:2rem;
+            display:flex;
+            cursor:pointer;
+            
+            &--dec{
+                color:$PrimaryColor;
+                width:6rem;
+                height:6rem;
+                border:1px solid silver;
+            }
+
+            &--quantity{
+                width:6rem;
+                height:6rem;
+                border:1px solid silver;
+                @include flexCenter;   
+                border-left:none;
+                border-right:none;
+                font-size:3rem;
+                
+            }
+
+            &--inc{
+                color:$PrimaryColor;
+                width:6rem;
+                height:6rem;
+                border:1px solid silver;
+            }
+            .btn-default{
+                margin-left:1rem;
+                width:40rem;
+                border:none;
+                background:$PrimaryColor;
+                color:$LightBlack;
+                outline:none;
+                font-size:1.8rem;
+                text-transform: uppercase;
+                cursor:pointer;
+                @include lg {
+                    width:15rem;
+                    font-size:1.7rem;
+                  }
+                @include md {
+                    width:13rem;
+                    font-size:1.6rem;
+                  }
+                @include sm {
+                    width:10rem;
+                    font-size:1.5rem;
+                  }
+            }
+        }
+
+    }
+    &__desc{
+        margin-top:1.5rem;
+        font-size:1.9rem;
+        @include lg {
+            font-size:1.7rem;
+          }
+        @include md {
+            font-size:1.6rem;
+          }
+        @include sm {
+
+            font-size:1.5rem;
+          }
+        h4{
+            margin-bottom:1rem;
+        }
+    }
+
+
+}

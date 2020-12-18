@@ -1,0 +1,59 @@
+.header{
+    width:100%;
+    height:75vh;
+    @include bgImage('./images/banner.jpg');
+    background-color:rgba($color: gray, $alpha: 9.0);
+    @include flexCenter;
+    color:$white;
+
+    &__textbox {
+        position: absolute;
+        display: grid;
+        align-items: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 45%;
+        height: 30rem;
+        left: 10%;
+    
+        @include md {
+          height: 34rem;
+        }
+    
+        @include sm {
+          width: 100%;
+          left: 0;
+          padding: 2rem;
+          height: 34rem;
+        }
+    
+        &--headline {
+          margin-top:10rem;
+          font-size: 4.5rem;
+          font-weight: 500;
+          font-family:$SecondaryFont;
+          color:$head;
+        
+    
+          @include md {
+            font-size: 2.8rem;
+          }
+    
+          @include sm {
+            font-size: 2.5rem;
+          }
+        }
+        &--story {
+          padding-top:2.5rem;
+          color: $LightBlack;
+          font-size: 1.6rem;
+        }
+        &--story2{
+            padding-top:2rem;
+            color: $LightBlack;
+            font-size: 2.3rem;
+           
+        }
+    }
+    
+
+}

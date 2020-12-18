@@ -1,0 +1,123 @@
+.navbar{
+    @include flexCenter;
+    width:100%;
+    position:fixed;
+    top:0;
+    background:transparent;
+    height: 7rem;
+    transition: all 0.5s linear;
+    z-index:5;
+    box-shadow:0 0.5rem 2rem 0.2rem rgba(0,0,0,0.1);
+    position:fixed;
+    top:0;
+
+    &__container{
+        width:100%;
+        height: 7rem;
+        @include flexSpaceBetween;
+            @include md {
+                width:90%;
+              }
+            
+              @include sm {
+                width:80%;
+              }
+
+    }
+    
+    &__left{
+
+        img{
+            width:10rem;
+        }
+    }
+    &__right{
+     
+        &--basket{
+            position:relative;
+
+            .cart-icon{
+                color:$PrimaryColor;
+                font-size:2.3rem;
+            }
+
+            .cart-count{
+                display:flex;
+                @include flexCenter;
+                position:absolute;
+                right:-1.9rem;
+                top:-0.7rem;
+                width:2.1rem;
+                height:2.1rem;
+                background:$PrimaryColor;
+                border-radius:50%;
+                color:$LightBlack;
+                font-size:1.5rem;
+            }
+
+
+        }
+
+    }
+    .search {
+        width: 28rem;
+        height: 3rem;
+        border: 2px solid $LightBlack;
+        border-radius: 10rem;
+        outline: none;
+        transition: border 0.3s;
+        padding-left: 4rem;
+      
+        @include lg {
+          width: 25rem;
+        }
+      
+        @include md {
+          width: 20rem;
+        }
+      
+        @include sm {
+          width: 15rem;
+        }
+      
+        &__form {
+          display: flex;
+          align-items: center;
+          height: 100%;
+        }
+      
+        &:focus {
+          border: 2px solid $PrimaryColor;
+           padding-left: 4rem;
+      
+          &::placeholder {
+            color: transparent;
+          }
+        }
+      
+        &::placeholder {
+           padding-left: 4rem;
+          font-size: 1.5rem;
+          overflow: visible;
+          line-height: 1.5rem;
+          text-justify: center;
+          @include sm {
+            font-size: 1.1rem;
+          }
+        }
+      
+        &__icon {
+          position: absolute;
+          height: 2rem;
+          width: 2rem;
+          transform: translateX(1rem);
+        }
+      
+        &__submit--hidden {
+          visibility: hidden;
+          height: 0;
+          width: 0;
+        }
+      }
+}
+
